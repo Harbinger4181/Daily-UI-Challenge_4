@@ -1,0 +1,85 @@
+.background{
+    height: 50%;
+    width: 30%;
+    min-width: 400px;
+    background-color: black;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1.2fr 1fr 1fr 1fr 1fr;
+}
+
+.calc{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 30px;
+}
+
+.screen{
+    border: 2px solid black;
+    grid-area: 1/1/2/5;
+    background-color: aqua;
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    padding: 20px;
+}
+
+.keypad{
+    grid-area: 2/1/6/4;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+
+}
+
+.operators{
+    grid-area: 2/4/6/5;
+    display: grid;
+    grid-template-columns: 1;
+    grid-template-rows: 2/3;
+}
+
+.equal{
+    grid-area: 5/3/6/4;
+    background-color: tomato;
+    border: 2px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.key{
+    background-color: blueviolet;
+    border: 2px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.opKey{
+    background-color: chartreuse;
+    border: 2px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+body{
+    margin: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: xx-large;
+    height: 90vh;
+}
+
+.key:hover{
+    cursor: pointer;
+}
+
+.opKey:hover{
+    cursor: pointer;
+}
+
+.equal:hover{
+    cursor:pointer;
+}
